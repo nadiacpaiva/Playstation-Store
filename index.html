@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Playstation Store</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="assets/img/logo.png" alt="logo" />
+        <nav>
+          <ul>
+            <li><a href="">Consoles</a></li>
+            <li><a href="">Acessórios</a></li>
+            <li><a href="">Controles</a></li>
+            <li><a href="">Outros</a></li>
+          </ul>
+        </nav>
+        <img
+          onclick="showMenu()"
+          class="menu-icon"
+          src="assets/img/menu.png"
+          alt="menu"
+        />
+      </header>
+
+      <main>
+        <div class="column-1">
+          <h2>PS5 Dualshock</h2>
+          <h3>Wireless Controller for PlayStation</h3>
+          <p>Controle Original</p>
+          <h4>R$ 222,50</h4>
+          <button class="buy">Comprar agora  <img src="assets/img/arrow.png" alt="seta"></button>
+        </div>
+
+        <div class="column-2">
+          <img
+            class="controller"
+            src="assets/img/controller.png"
+            alt="controle"
+          />
+          <div class="color-box"></div>
+          <button class="add-cart">
+            <img src="assets/img/add.png" alt="adicionar-ao-carrinho" />
+          </button>
+        </div>
+      </main>
+
+      <footer>
+        <img src="assets/img/fb.png" alt="facebook" />
+        <img src="assets/img/ig.png" alt="instagram" />
+        <img src="assets/img/tw.png" alt="twitter" />
+      </footer>
+    </div>
+  </body>
+  <script>
+      const menuList = document.querySelector("nav");
+
+      function showMenu() {
+        menuList.classList.toggle("active");
+      }
+  
+  </script>
+</html>
