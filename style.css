@@ -274,7 +274,8 @@ body {
     }
 
     main {
-        margin: 185px 0 200px 0;
+        margin: 190px 0 200px 0;
+        gap: 20px;
     }
 }
 
